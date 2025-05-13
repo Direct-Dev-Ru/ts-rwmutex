@@ -1,0 +1,47 @@
+{
+    "name": "rwmutex-ts",
+    "version": "1.0.0",
+    "description": "Reader-writer mutex for TypeScript (ESM) with timeouts and priority",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "!dist/examples/**/*",
+        "!dist/**/*.test.*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest run",
+        "test:vitest:node": "vitest --config vitest.config.node.ts",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.17",
+        "prettier": "^3.2.5",
+        "typescript": "^5.3.3",
+        "vitest": "^1.2.0",
+        "@vitest/browser": "^1.6.1",
+        "@vitest/coverage-v8": "^1.2.2",
+        "vite-tsconfig-paths": "^4.3.1",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.7.0"
+    },
+    "keywords": [
+        "mutex",
+        "rwmutex",
+        "read-write",
+        "lock",
+        "concurrency",
+        "typescript",
+        "esm"
+    ],
+    "author": "Direct-Dev-Ru <info@direct-dev.ru> with gpt",
+    "license": "MIT"
+}

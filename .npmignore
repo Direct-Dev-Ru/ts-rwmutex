@@ -1,0 +1,17 @@
+# Сборочные и временные файлы
+test/
+src/
+coverage/
+vitest.config.ts
+
+# Конфигурации
+tsconfig.json
+.prettierrc
+.eslintrc
+.vscode/
+.env
+
+# Мета
+.npmignore
+README.draft.md
+.gitignore 
